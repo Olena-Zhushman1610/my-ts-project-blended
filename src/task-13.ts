@@ -1,0 +1,22 @@
+//Задача 13
+
+//Є функція reducer:
+type Action = "increment" | "decrement";
+function reducer(state: number, action: Action): number {
+  switch (action) {
+    case "increment":
+      return state + 1;
+    case "decrement":
+      return state - 1;
+    default:
+      return state;
+  }
+}
+reducer(5, "increment");
+console.log(reducer(5, "increment"));
+
+//Завдання:
+
+//Типізуйте state як число.
+//творіть тип Action, що може приймати як значення лише рядки increment та decrement.
+//Типізуйте функцію повністю.
