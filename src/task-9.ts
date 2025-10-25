@@ -47,12 +47,12 @@ stringContainer.addItem("Cherry");
 console.log("Number container item [1]:", numberContainer.getItem(1)); // 20
 console.log("String container item [2]:", stringContainer.getItem(2)); // Cherry
 //4. Створіть функцію getLastElement, яка приймає масив елементів контейнера Container і повертає останній елемент масиву.
-function getLastElement<T>(items: T[]): T {
-  return items[DataTransferItemList.length - 1];
+function getLastElement<T>(container: Container<T>): T {
+  return container.items[container.items.length - 1];
 }
 //5. Переконайтесь, що функція getLastElement працює коректно для різних типів контейнерів (масиви чисел, масиви рядків).
-console.log("Last number:", getLastElement(numberContainer.items));
-console.log("Last string:", getLastElement(stringContainer.items));
+console.log("Last number:", getLastElement(numberContainer));
+console.log("Last string:", getLastElement(stringContainer));
 
 //Примітка:
 

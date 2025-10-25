@@ -11,3 +11,5 @@ dimensions.push(720); // ✅ дозволено
 //Додайте до змінної dimensions явну типізацію.
 //Переконайтеся, що TypeScript не дозволяє додавати до масиву
 // значення інших типів (наприклад, рядки).
+const dimension: [number, string] = [1920, "old"];
+dimension.push(15, "1080p");

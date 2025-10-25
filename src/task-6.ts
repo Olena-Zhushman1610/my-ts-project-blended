@@ -14,5 +14,5 @@ console.log(user.address?.city);
 //Завдання:
 
 //Створіть тип для user.
-//Зробіть address необов’язковим.
+//Зробіть address необов язковим.
 //Перевірте, що user.address?.city не викликає помилки.
